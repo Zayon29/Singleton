@@ -1,16 +1,36 @@
-
-public class Main {
+public  class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.println("Hello and welcome!");
+        FabricaFiguras fabrica = FabricaFiguras.getInstancia();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // Teste de criação de um único Círculo
+        Figura circulo1 = fabrica.criarCirculo();
+        Figura circulo2 = fabrica.criarCirculo();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
+        // Teste de criação de triângulos específicos
+        Figura trianguloIsosceles1 = fabrica.criarTrianguloIsosceles();
+        Figura trianguloIsosceles2 = fabrica.criarTrianguloIsosceles();
+
+
+        Figura trianguloEquilatero1 = fabrica.criarTrianguloEquilatero();
+        Figura trianguloEquilatero2 = fabrica.criarTrianguloEquilatero();
+
+
+        Figura trianguloRetangulo1 = fabrica.criarTrianguloRetangulo();
+        Figura trianguloRetangulo2 = fabrica.criarTrianguloRetangulo();
+
+
+        // Teste de criação de quadrados (instâncias ilimitadas)
+        Figura quadrado1 = fabrica.criarQuadrado();
+        Figura quadrado2 = fabrica.criarQuadrado();
+
+
+        // Chamada dos métodos desenhar para ver o funcionamento
+        circulo1.desenhar();
+        trianguloIsosceles1.desenhar();
+        trianguloEquilatero1.desenhar();
+        trianguloRetangulo1.desenhar();
+        quadrado1.desenhar();
+        quadrado2.desenhar();
     }
 }
