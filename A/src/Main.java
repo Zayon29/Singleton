@@ -2,12 +2,11 @@ public  class Main {
     public static void main(String[] args) {
         FabricaFiguras fabrica = FabricaFiguras.getInstancia();
 
-        // Teste de criação de um único Círculo
+        // colocando outro circulo para confirmar apenas uma unica saida
         Figura circulo1 = fabrica.criarCirculo();
         Figura circulo2 = fabrica.criarCirculo();
 
 
-        // Teste de criação de triângulos específicos
         Figura trianguloIsosceles1 = fabrica.criarTrianguloIsosceles();
         Figura trianguloIsosceles2 = fabrica.criarTrianguloIsosceles();
 
@@ -20,12 +19,11 @@ public  class Main {
         Figura trianguloRetangulo2 = fabrica.criarTrianguloRetangulo();
 
 
-        // Teste de criação de quadrados (instâncias ilimitadas)
+        // testando os  quadrados  para verificar a quantidade de saidas (instâncias ilimitadas)
         Figura quadrado1 = fabrica.criarQuadrado();
         Figura quadrado2 = fabrica.criarQuadrado();
 
 
-        // Chamada dos métodos desenhar para ver o funcionamento
         circulo1.desenhar();
         trianguloIsosceles1.desenhar();
         trianguloEquilatero1.desenhar();
