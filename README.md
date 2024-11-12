@@ -1,1 +1,1 @@
-Testes adicionados
+Atividade de MAP.Implementando padrão Singleton.
